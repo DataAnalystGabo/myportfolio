@@ -18,7 +18,6 @@
   </head>
 
   <body class="body">
-
     <main class="main">
       <nav class="nav" id="nav">
         <div class="nav__wrapper">
@@ -32,11 +31,21 @@
 
           <ul class="nav__items">
             <li class="nav__item"><a class="nav__link" href="#">Inicio</a></li>
-            <li class="nav__item"><a class="nav__link" href="#aboutme">Acerca de mi</a></li>
-            <li class="nav__item"><a class="nav__link" href="#stack">Stack</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Certificaciones</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Proyectos</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Contacto</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="#aboutme">Acerca de mi</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#stack">Stack</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#certifications">Certificaciones</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Proyectos</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Contacto</a>
+            </li>
           </ul>
 
           <a class="menu__hamburger" href="#nav">
@@ -44,7 +53,6 @@
             <span class="menu__line"></span>
             <span class="menu__line"></span>
           </a>
-          
 
           <a class="menu__close" href="#">
             <span class="menu__line menu__line--closeone"></span>
@@ -54,11 +62,14 @@
       </nav>
 
       <div class="hero">
-
         <div class="hero__wrapper">
           <div class="hero__title">
             <h1 class="hero__h1">Gonzalo Ramirez - Desarrollador Web</h1>
-            <img class="hero__gabodev" src="src/img/logos/gabodev-text.svg" alt="">
+            <img
+              class="hero__gabodev"
+              src="src/img/logos/gabodev-text.svg"
+              alt=""
+            />
           </div>
         </div>
       </div>
@@ -67,14 +78,28 @@
         <div class="card" id="card__aboutme">
           <div class="card__glass">
             <div class="card__box">
-
               <h2 class="card__h2">Acerca de mí</h2>
-  
-              <p class="card__paragraph">Hola, mi nombre es Gonzalo Ramirez y soy oriundo de Buenos Aires, Argentina.</p>
-              <p class="card__paragraph">Tengo 27 años y estudio la Licenciatura en Ciencias de Datos en la Universidad de Almirante Brown. Además, estudio de manera autodidacta desarrollo web.</p>
-              <p class="card__paragraph">Comencé en el mundo del desarrollo web hace 1 año aproximadamente. Lo primero en aprender fue desarrollo frontend. Al día de hoy sigo mejorando mis habilidades frontend y estoy incursionando en el mundo del backend.</p>
-              <p class="card__paragraph">Mi meta para este 2023 es conseguir mi primer trabajo en la industria IT y continuar desarrollando mis proyectos web personales.</p>
-  
+
+              <p class="card__paragraph">
+                Hola, mi nombre es Gonzalo Ramirez y soy oriundo de Buenos
+                Aires, Argentina.
+              </p>
+              <p class="card__paragraph">
+                Tengo 27 años y estudio la Licenciatura en Ciencias de Datos en
+                la Universidad de Almirante Brown. Además, estudio de manera
+                autodidacta desarrollo web.
+              </p>
+              <p class="card__paragraph">
+                Comencé en el mundo del desarrollo web hace 1 año
+                aproximadamente. Lo primero en aprender fue desarrollo frontend.
+                Al día de hoy sigo mejorando mis habilidades frontend y estoy
+                incursionando en el mundo del backend.
+              </p>
+              <p class="card__paragraph">
+                Mi meta para este 2023 es conseguir mi primer trabajo en la
+                industria IT y continuar desarrollando mis proyectos web
+                personales.
+              </p>
             </div>
           </div>
         </div>
@@ -84,17 +109,68 @@
         <div class="card" id="card__languages">
           <div class="card__glass">
             <div class="card__box">
-
               <h2 class="card__h2">¿Con qué tecnologías programo?</h2>
-  
-              <p class="card__paragraph">Estas son las tecnologías que he aprendido y sigo aprendiendo.</p>
-              
+
+              <p class="card__paragraph">
+                Estas son las tecnologías que he aprendido y sigo aprendiendo.
+              </p>
+
               <ul class="card__items">
-                <li class="card__item"><a href="https://es.wikipedia.org/wiki/HTML5" title="HTML5" target="_blank"><img class="card__icon" src="src/img/logos/html.svg" alt="Icono de HTML5"></a></li>
-                <li class="card__item"><a href="https://es.wikipedia.org/wiki/CSS" title="CSS3" target="_blank"><img class="card__icon" src="src/img/logos/css.svg" alt="Icono de CSS3"></a></li>
-                <li class="card__item"><a href="https://es.wikipedia.org/wiki/Php" title="PHP" target="_blank"><img class="card__icon" src="src/img/logos/php.svg" alt="Icono de PHP"></a></li>
-                <li class="card__item"><a href="https://es.wikipedia.org/wiki/Javascript" title="JavaScript" target="_blank"><img class="card__icon" src="src/img/logos/js.svg" alt="Icono de JavaScript"></a></li>
-                <li class="card__item"><a href="https://es.wikipedia.org/wiki/Sql" title="SQL" target="_blank"><img class="card__icon" src="src/img/logos/sql.svg" alt="Icono de SQL"></a></li>
+                <li class="card__item">
+                  <a
+                    href="https://es.wikipedia.org/wiki/HTML5"
+                    title="HTML5"
+                    target="_blank"
+                    ><img
+                      class="card__icon"
+                      src="src/img/logos/html.svg"
+                      alt="Icono de HTML5"
+                  /></a>
+                </li>
+                <li class="card__item">
+                  <a
+                    href="https://es.wikipedia.org/wiki/CSS"
+                    title="CSS3"
+                    target="_blank"
+                    ><img
+                      class="card__icon"
+                      src="src/img/logos/css.svg"
+                      alt="Icono de CSS3"
+                  /></a>
+                </li>
+                <li class="card__item">
+                  <a
+                    href="https://es.wikipedia.org/wiki/Php"
+                    title="PHP"
+                    target="_blank"
+                    ><img
+                      class="card__icon"
+                      src="src/img/logos/php.svg"
+                      alt="Icono de PHP"
+                  /></a>
+                </li>
+                <li class="card__item">
+                  <a
+                    href="https://es.wikipedia.org/wiki/Javascript"
+                    title="JavaScript"
+                    target="_blank"
+                    ><img
+                      class="card__icon"
+                      src="src/img/logos/js.svg"
+                      alt="Icono de JavaScript"
+                  /></a>
+                </li>
+                <li class="card__item">
+                  <a
+                    href="https://es.wikipedia.org/wiki/Sql"
+                    title="SQL"
+                    target="_blank"
+                    ><img
+                      class="card__icon"
+                      src="src/img/logos/sql.svg"
+                      alt="Icono de SQL"
+                  /></a>
+                </li>
               </ul>
             </div>
           </div>
@@ -103,31 +179,290 @@
         <div class="card" id="card__tools">
           <div class="card__glass">
             <div class="card__box">
+              <h2 class="card__h2">
+                ¿Con qué programas diseño mis interfaces?
+              </h2>
 
-              <h2 class="card__h2">¿Con qué programas diseño mis interfaces?</h2>
-  
-              <p class="card__paragraph">Estas son mis apps favoritas para diseñar interfaces UX/UI que luego serán construidas con código.</p>
-              
+              <p class="card__paragraph">
+                Estas son mis apps favoritas para diseñar interfaces UX/UI que
+                luego serán construidas con código.
+              </p>
+
               <ul class="card__items">
-                <li class="card__item"><a href="https://es.wikipedia.org/wiki/Figma" title="Figma" target="_blank"><img class="card__icon" src="src/img/logos/figma.svg" alt="Icono de Figma"></a></li>
-                <li class="card__item"><a href="https://es.wikipedia.org/wiki/Adobe_Illustrator" title="Adobe Illustrator" target="_blank"><img class="card__icon" src="src/img/logos/illustrator.svg" alt="Icono de Adobe Illustrator"></a></li>
-                <li class="card__item"><a href="https://es.wikipedia.org/wiki/Photoshop" title="Adobe Photoshop" target="_blank"><img class="card__icon" src="src/img/logos/photoshop.svg" alt="Icono de Adobe Photoshop"></a></li>
+                <li class="card__item">
+                  <a
+                    href="https://es.wikipedia.org/wiki/Figma"
+                    title="Figma"
+                    target="_blank"
+                    ><img
+                      class="card__icon"
+                      src="src/img/logos/figma.svg"
+                      alt="Icono de Figma"
+                  /></a>
+                </li>
+                <li class="card__item">
+                  <a
+                    href="https://es.wikipedia.org/wiki/Adobe_Illustrator"
+                    title="Adobe Illustrator"
+                    target="_blank"
+                    ><img
+                      class="card__icon"
+                      src="src/img/logos/illustrator.svg"
+                      alt="Icono de Adobe Illustrator"
+                  /></a>
+                </li>
+                <li class="card__item">
+                  <a
+                    href="https://es.wikipedia.org/wiki/Photoshop"
+                    title="Adobe Photoshop"
+                    target="_blank"
+                    ><img
+                      class="card__icon"
+                      src="src/img/logos/photoshop.svg"
+                      alt="Icono de Adobe Photoshop"
+                  /></a>
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
 
+      <div class="certifications" id="certifications">
+        <div class="card" id="card__certifications">
+          <div class="card__glass">
+            <div class="card__box">
+              <h2 class="card__h2">Certificaciones</h2>
+
+              <p class="card__paragraph">
+                Aquí están algunas de las certificaciones obtenidos en este
+                tiempo.
+              </p>
+
+              <ul class="card__items card__items--certifications">
+                <li class="card__item card__item--certifications">
+                  <img
+                    class="card__icon card__icon--certifications"
+                    src="src/img/logos/platzi.svg"
+                    alt="Icono de Platzi"
+                  />
+
+                  <div class="card__description">
+                    <strong>Platzi Curso Básico de PHP</strong>
+                    <span class="card__span"
+                      >Instalación, Fundamentos y Operadores.</span
+                    >
+                  </div>
+                </li>
+
+                <li class="card__item card__item--certifications">
+                  <img
+                    class="card__icon card__icon--certifications"
+                    src="src/img/logos/platzi.svg"
+                    alt="Icono de Platzi"
+                  />
+
+                  <div class="card__description">
+                    <strong>Platzi Curso Básico de PHP</strong>
+                    <span class="card__span"
+                      >Buenas prácticas, renderizado, métodos abreviados.</span
+                    >
+                  </div>
+                </li>
+
+                <li class="card__item card__item--certifications">
+                  <img
+                    class="card__icon card__icon--certifications"
+                    src="src/img/logos/platzi.svg"
+                    alt="Icono de Platzi"
+                  />
+
+                  <div class="card__description">
+                    <strong>Platzi Curso de Integración de PHP con HTML</strong>
+                    <span class="card__span"
+                      >Arreglos, Funciones y Estructuras de Control.</span
+                    >
+                  </div>
+                </li>
+
+                <li class="card__item card__item--certifications">
+                  <img
+                    class="card__icon card__icon--certifications"
+                    src="src/img/logos/platzi.svg"
+                    alt="Icono de Platzi"
+                  />
+
+                  <div class="card__description">
+                    <strong>Platzi Curso Práctico de PHP</strong>
+                    <span class="card__span"
+                      >Creación de un formulario de contacto con PHPMailer,
+                      saneamiento de datos.</span
+                    >
+                  </div>
+                </li>
+
+                <li class="card__item card__item--certifications">
+                  <img
+                    class="card__icon card__icon--certifications"
+                    src="src/img/logos/platzi.svg"
+                    alt="Icono de Platzi"
+                  />
+
+                  <div class="card__description">
+                    <strong>Platzi Curso de Asincronismo con JavaScript</strong>
+                    <span class="card__span"
+                      >API, Fetch, Async-Await, Promises.</span
+                    >
+                  </div>
+                </li>
+
+                <li class="card__item card__item--certifications">
+                  <img
+                    class="card__icon card__icon--certifications"
+                    src="src/img/logos/argentina-programa.svg"
+                    alt="Icono de Platzi"
+                  />
+
+                  <div class="card__description">
+                    <strong>Argentina Programa 4.0 #SéProgramar</strong>
+                    <span class="card__span"
+                      >Fundamentos, Programación Imperativa, Programación con
+                      Objetos.</span
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="proyects" id="proyects">
+        <div class="card" id="card__proyects">
+          <div class="card__glass">
+            <div class="card__box">
+              <div class="card__preview">
+                <img
+                  class="card__img"
+                  src="src/img/taekwondoitfonline.png"
+                  alt="Preview en blanco y negro de mi proyecto web de noticias sobre Taekwondo ITF"
+                />
+              </div>
+
+              <div class="card__data data">
+                <div class="data__header">
+                  <h2 class="data__title">TAEKWONDOITF.online</h2>
+
+                  <div class="data__links">
+                    <a class="data__link" href="" title="Ver código">
+                      <img
+                        class="data__icon"
+                        src="src/img/logos/github.svg"
+                        alt="Icono de Github"
+                      />
+                    </a>
+                    <a class="data__link" href="" title="Visitar sitio web">
+                      <img
+                        class="data__icon"
+                        src="src/img/logos/view.svg"
+                        alt="Icono de enlance"
+                      />
+                    </a>
+                  </div>
+                  
+                </div>
+
+                <p class="card__paragraph">
+                  Este es el primer proyecto web que desarrollé en el 2022.
+                  Taekwondoitf.online es un sitio web de noticias sobre todo lo
+                  relacionado al Taekwondo ITF.
+                </p>
+                <p class="card__paragraph">
+                  Este proyecto surge con la intención de poner en práctica todo
+                  lo aprendido hasta ese entonces. Para desarrollarlo utilicé
+                  HTML5, CSS3, PHP, Js, SQL.
+                </p>
+              </div>
+
+              <!-- <h2 class="card__h2">¿Con qué tecnologías programo?</h2>
+
+              <p class="card__paragraph">
+                Estas son las tecnologías que he aprendido y sigo aprendiendo.
+              </p>
+
+              <ul class="cardems">
+                <li class="card__item">
+                  <a
+                    href="https://es.wikipedia.org/wiki/HTML5"
+                    title="HTML5"
+                    target="_blank"
+                    ><img
+                      class="card__icon"
+                      src="src/img/logos/html.svg"
+                      alt="Icono de HTML5"
+                  /></a>
+                </li>
+                <li class="card__item">
+                  <a
+                    href="https://es.wikipedia.org/wiki/CSS"
+                    title="CSS3"
+                    target="_blank"
+                    ><img
+                      class="card__icon"
+                      src="src/img/logos/css.svg"
+                      alt="Icono de CSS3"
+                  /></a>
+                </li>
+                <li class="card__item">
+                  <a
+                    href="https://es.wikipedia.org/wiki/Php"
+                    title="PHP"
+                    target="_blank"
+                    ><img
+                      class="card__icon"
+                      src="src/img/logos/php.svg"
+                      alt="Icono de PHP"
+                  /></a>
+                </li>
+                <li class="card__item">
+                  <a
+                    href="https://es.wikipedia.org/wiki/Javascript"
+                    title="JavaScript"
+                    target="_blank"
+                    ><img
+                      class="card__icon"
+                      src="src/img/logos/js.svg"
+                      alt="Icono de JavaScript"
+                  /></a>
+                </li>
+                <li class="card__item">
+                  <a
+                    href="https://es.wikipedia.org/wiki/Sql"
+                    title="SQL"
+                    target="_blank"
+                    ><img
+                      class="card__icon"
+                      src="src/img/logos/sql.svg"
+                      alt="Icono de SQL"
+                  /></a>
+                </li>
+              </ul> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="moon">
-        <img class="moon__img" src="src/img/moon.svg" alt="">
+        <img class="moon__img" src="src/img/moon.svg" alt="" />
       </div>
 
       <div class="astronaut">
-        <img class="astronaut__img" src="src/img/astronaut-floating.svg" alt="">
+        <img
+          class="astronaut__img"
+          src="src/img/astronaut-floating.svg"
+          alt=""
+        />
       </div>
     </main>
-
- 
-
   </body>
 </html>

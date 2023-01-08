@@ -1,11 +1,8 @@
-const cardAboutMe     = document.getElementById('card__aboutme');
-const cardLanguages   = document.getElementById('card__languages');
-const cardTools       = document.getElementById('card__tools');
-
-
-console.log(cardAboutMe);
-console.log(cardLanguages);
-console.log(cardTools);
+const cardAboutMe        = document.getElementById('card__aboutme');
+const cardLanguages      = document.getElementById('card__languages');
+const cardTools          = document.getElementById('card__tools');
+const cardCertifications = document.getElementById('card__certifications');
+const cardProyects       = document.getElementById('card__proyects');
 
 const showCard = (entradas)=>{
 
@@ -34,3 +31,5 @@ const observe = new IntersectionObserver(showCard, {
 observe.observe(cardAboutMe);
 observe.observe(cardLanguages);
 observe.observe(cardTools);
+observe.observe(cardCertifications);
+observe.observe(cardProyects);

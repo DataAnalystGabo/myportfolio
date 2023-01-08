@@ -15,7 +15,7 @@
     --box-shadow           : 0px 0px 15px rgba(194, 130, 250, 0.5), 0px 0px 5px #6E61CA;
 }
 
-/** Body */
+/** =========================== Body ===========================*/
 
 .body{
     width: 100%;
@@ -23,7 +23,7 @@
     background-color: var(--black);
 }
 
-/** Main */
+/**=========================== Main ===========================*/
 
 .main{
     width: 100%;
@@ -39,7 +39,7 @@
     grid-template-rows: repeat(5, max-content);
 }
 
-/** Nav */
+/**=========================== Nav ===========================*/
 
 .nav{
     --state-open: scale(1);
@@ -67,7 +67,6 @@
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
-    *background-color: #B9AFBE;
 }
 
 .nav__picture{
@@ -170,7 +169,7 @@
     color: var(--grey);
 }
 
-/** Hero */
+/**=========================== Hero ===========================*/
 
 .hero{
     width: 100%;
@@ -187,7 +186,6 @@
     grid-template-rows: 1fr;
     overflow: hidden;
     margin-top: 30vh;
-    *background-color: tomato;
 }
 
 .hero__title{
@@ -201,7 +199,6 @@
     grid-row: 1/2;
     grid-column: 1/2;
     margin: 0 auto;
-    *background-color: var(--green);
 }
 
 .hero__h1{
@@ -223,16 +220,15 @@
     filter: drop-shadow(4px 2px 5px rgba(194, 130, 250, .5));
 }
 
-/** Aboutme */
+/**=========================== Aboutme ===========================*/
 
-.aboutme{
+.aboutme, .stack, .certifications, .proyects{
     width: 100%;
     height: max-content;
     display: flex;
     justify-content: center;
     align-items: center;
     grid-area: aboutme;
-    *border: 5px solid yellow;
 }
 
 .card{
@@ -284,19 +280,14 @@
     line-height: 1.6em;
     margin-bottom: .3em;
     font-size: 1.1rem;
+    color: var(--grey);
 }
 
-/** Certifications */
+/**=========================== Stack ===========================*/
 
 .stack{
-    width: 100%;
-    height: max-content;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     grid-area: stack;
-    *border: 5px solid red;
 }
 
 .card__items{
@@ -319,7 +310,92 @@
     *background-color: var(--grey);
 }
 
-/** Backgrounds */
+/**=========================== certifications ===========================*/
+
+.certifications{
+    grid-area: certifications;
+}
+
+.card__items--certifications{
+    flex-direction: column;
+}
+
+.card__item--certifications{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card__icon--certifications{
+    width: 2.22em;
+    height: 100%;
+    margin-right: 1em;
+    cursor: unset;
+}
+
+.card__description{
+    display: flex;
+    flex-direction: column;
+}
+
+.card__span{
+    color: var(--grey);
+}
+
+/**=========================== Proyects ===========================*/
+
+.proyects{
+    grid-area: proyects;
+    flex-direction: column;
+}
+
+.card__preview{
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+
+.card__img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: filter .5s ease-in-out;
+}
+
+.card__img:hover{
+    filter: grayscale(0);
+}
+
+.data__header{
+    display: flex;
+    align-items: center;
+    margin-bottom: .5em;
+    gap: 1em;
+}
+
+.data__title{
+    width: max-content;
+}
+
+.data__links{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.data__link{
+    width: max-content;
+    height: 100%;
+}
+
+.data__icon{
+    width: 1.7em;
+    height: 100%;
+}
+
+/**=========================== Backgrounds ===========================*/
 
 .moon{
     width: 100%;
@@ -373,7 +449,7 @@
 }
 
 
-/** Medias Querys */
+/**=========================== Medias Querys ===========================*/
 @media (min-width:768px) {
     
     .nav{
