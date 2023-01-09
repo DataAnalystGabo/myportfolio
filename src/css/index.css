@@ -6,10 +6,13 @@
     --blue                 : #243D66;
     --violet               : #6E61CA;
     --fuchsia              : #C282FA;
+    --fuchsia-dark         : #a268d4;
     --grey                 : #B9AFBE;
     --green                : #2EBF2B;
+    --green-dark           : #1f901d;
     --background-glass     : linear-gradient(89.74deg, rgba(110, 97, 202, 0.1) 0.23%, rgba(194, 130, 250, 0.1) 99.79%);
     --shadow-glass         : 0px -10px 40px rgba(0, 0, 0, 0.25);
+    --shadow-button        : 0px 0px 15px rgba(194, 130, 250, 0.5), 0px 0px 5px #6E61CA;
     --background-box-card  : linear-gradient(89.74deg, rgba(24, 24, 24, 0.9) 0.23%, rgba(36, 61, 102, 0.9) 98.24%);
     --gradient-line        : linear-gradient(0deg, #C282FA 0.96%, #6E61CA 100.02%);
     --box-shadow           : 0px 0px 15px rgba(194, 130, 250, 0.5), 0px 0px 5px #6E61CA;
@@ -220,6 +223,66 @@
     filter: drop-shadow(4px 2px 5px rgba(194, 130, 250, .5));
 }
 
+.hero__button{
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fuchsia);
+    margin: 0 auto;
+    padding: 1em 3em;
+    gap: 1em;
+    border-radius: 3em;
+    cursor: pointer;
+    color: var(--white);
+    margin: 1em auto;
+    text-decoration: none;
+    border: 2px solid var(--fuchsia-dark);
+    transition-property: width;
+}
+
+.hero__label{
+    display: inline;
+    transition-delay: 0.75s;
+}
+
+.hero__icon--down, .hero__icon--check{
+    width: 1.5em;
+    height: 100%;
+}
+
+.hero__icon--check{
+    display: none;
+}
+
+.hero__button:hover{
+    box-shadow: var(--shadow-button);
+}
+
+.hero__button:focus{
+    width: 3.5em;
+    height: 3.5em;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--green);
+    border: 2px solid var(--green-dark);
+    transition: all 1s ease;
+    box-shadow: none;
+}
+
+.hero__button:focus .hero__label{
+    display: none;
+}
+
+.hero__button:focus .hero__icon--down{
+    display: none;
+}
+
+.hero__button:focus .hero__icon--check{
+    display: block;
+}
+
 /**=========================== Aboutme ===========================*/
 
 .aboutme, .stack, .certifications, .proyects{
@@ -351,16 +414,23 @@
 
 .card__preview{
     width: 100%;
+    height: 100%;
     object-fit: cover;
     overflow: hidden;
+}
+
+.card__link{
+    width: 100%;
+    height: 100%;
+    display: flex;
     margin-bottom: 1em;
+    cursor: pointer;
 }
 
 .card__img{
     width: 100%;
     height: 100%;
     filter: grayscale(100%);
-    cursor: pointer;
     transition: filter .5s ease-in-out;
 }
 
@@ -450,7 +520,7 @@
 
 
 /**=========================== Medias Querys ===========================*/
-@media (min-width:768px) {
+@media (min-width:950px) {
     
     .nav{
         --state-open: scale(0);
@@ -478,4 +548,27 @@
         font-size: 1em;
     }
 
+    .card__box--proyects{
+        display: grid;
+        grid-template-columns: 35% 65%;
+        grid-template-rows: 1fr;
+        gap: 1em;
+    }
+
+    .card__preview{
+        width: 100%;
+        height: 100%;
+        margin-bottom: unset;
+    }
+
+    .card__link{
+        margin-bottom: unset;
+    }
+
+    .card__img{
+        width: 100%;
+        height: 100%;
+        margin-bottom: unset;
+        object-fit: contain;
+    }
 }

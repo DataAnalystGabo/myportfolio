@@ -41,10 +41,10 @@
               <a class="nav__link" href="#certifications">Certificaciones</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Proyectos</a>
+              <a class="nav__link" href="#proyects">Proyectos</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Contacto</a>
+              <a class="nav__link" href="#contact">Contacto</a>
             </li>
           </ul>
 
@@ -71,6 +71,19 @@
               alt=""
             />
           </div>
+
+          <!-- <button class="hero__button">
+            <span class="hero__label">Descargar CV</span>
+            <img class="hero__icon hero__icon--down" src="src/img/logos/download.svg" alt="Icono de descarga">
+            <img class="hero__icon hero__icon--check" src="src/img/logos/check.svg" alt="Icono de descarga">
+          </button> -->
+
+          <a class="hero__button" href="">
+            <span class="hero__label">Descargar CV</span>
+            <img class="hero__icon hero__icon--down" src="src/img/logos/download.svg" alt="Icono de descarga">
+            <img class="hero__icon hero__icon--check" src="src/img/logos/check.svg" alt="Icono de descarga">
+          </a>
+
         </div>
       </div>
 
@@ -338,15 +351,19 @@
       </div>
 
       <div class="proyects" id="proyects">
-        <div class="card" id="card__proyects">
+        <div class="card" id="card__proyects--one">
           <div class="card__glass">
-            <div class="card__box">
+            <div class="card__box card__box--proyects">
               <div class="card__preview">
-                <img
+
+                <a class="card__link" href="https://taekwondoitf.online/" target="_blank">
+                  <img
                   class="card__img"
                   src="src/img/taekwondoitfonline.png"
-                  alt="Preview en blanco y negro de mi proyecto web de noticias sobre Taekwondo ITF"
-                />
+                  alt="Preview en blanco y negro de mi proyecto web sobre el clima actual"
+                  />
+                </a>
+
               </div>
 
               <div class="card__data data">
@@ -354,14 +371,14 @@
                   <h2 class="data__title">TAEKWONDOITF.online</h2>
 
                   <div class="data__links">
-                    <a class="data__link" href="" title="Ver código">
+                    <a class="data__link" href="" title="Ver código" target="_blank">
                       <img
                         class="data__icon"
                         src="src/img/logos/github.svg"
                         alt="Icono de Github"
                       />
                     </a>
-                    <a class="data__link" href="" title="Visitar sitio web">
+                    <a class="data__link" href="https://taekwondoitf.online/" title="Visitar sitio web" target="_blank">
                       <img
                         class="data__icon"
                         src="src/img/logos/view.svg"
@@ -369,7 +386,6 @@
                       />
                     </a>
                   </div>
-                  
                 </div>
 
                 <p class="card__paragraph">
@@ -383,70 +399,58 @@
                   HTML5, CSS3, PHP, Js, SQL.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
 
-              <!-- <h2 class="card__h2">¿Con qué tecnologías programo?</h2>
+        <div class="card" id="card__proyects--two">
+          <div class="card__glass">
+            <div class="card__box card__box--proyects">
+              <div class="card__preview">
 
-              <p class="card__paragraph">
-                Estas son las tecnologías que he aprendido y sigo aprendiendo.
-              </p>
+                <a class="card__link" href="https://appweather.online/" target="_blank">
+                  <img
+                  class="card__img"
+                  src="src/img/appweatheronline.png"
+                  alt="Preview en blanco y negro de mi proyecto web sobre el clima actual"
+                  />
+                </a>
+                
+              </div>
 
-              <ul class="cardems">
-                <li class="card__item">
-                  <a
-                    href="https://es.wikipedia.org/wiki/HTML5"
-                    title="HTML5"
-                    target="_blank"
-                    ><img
-                      class="card__icon"
-                      src="src/img/logos/html.svg"
-                      alt="Icono de HTML5"
-                  /></a>
-                </li>
-                <li class="card__item">
-                  <a
-                    href="https://es.wikipedia.org/wiki/CSS"
-                    title="CSS3"
-                    target="_blank"
-                    ><img
-                      class="card__icon"
-                      src="src/img/logos/css.svg"
-                      alt="Icono de CSS3"
-                  /></a>
-                </li>
-                <li class="card__item">
-                  <a
-                    href="https://es.wikipedia.org/wiki/Php"
-                    title="PHP"
-                    target="_blank"
-                    ><img
-                      class="card__icon"
-                      src="src/img/logos/php.svg"
-                      alt="Icono de PHP"
-                  /></a>
-                </li>
-                <li class="card__item">
-                  <a
-                    href="https://es.wikipedia.org/wiki/Javascript"
-                    title="JavaScript"
-                    target="_blank"
-                    ><img
-                      class="card__icon"
-                      src="src/img/logos/js.svg"
-                      alt="Icono de JavaScript"
-                  /></a>
-                </li>
-                <li class="card__item">
-                  <a
-                    href="https://es.wikipedia.org/wiki/Sql"
-                    title="SQL"
-                    target="_blank"
-                    ><img
-                      class="card__icon"
-                      src="src/img/logos/sql.svg"
-                      alt="Icono de SQL"
-                  /></a>
-                </li>
-              </ul> -->
+              <div class="card__data data">
+                <div class="data__header">
+                  <h2 class="data__title">APPWEATHER.online</h2>
+
+                  <div class="data__links">
+                    <a class="data__link" href="" title="Ver código" target="_blank">
+                      <img
+                        class="data__icon"
+                        src="src/img/logos/github.svg"
+                        alt="Icono de Github"
+                      />
+                    </a>
+                    <a class="data__link" href="https://appweather.online/" title="Visitar sitio web" target="_blank">
+                      <img
+                        class="data__icon"
+                        src="src/img/logos/view.svg"
+                        alt="Icono de enlance"
+                      />
+                    </a>
+                  </div>
+                </div>
+
+                <p class="card__paragraph">
+                  Este proyecto es el resultado final del curso de Asincronismo
+                  en Javascript de Platzi.
+                </p>
+                <p class="card__paragraph">
+                  Aquí puse en práctica lo aprendido : consumo de API Rest,
+                  funcionas asíncronas con Fetch, Async-Await y el manejo de
+                  promesas. También aprendí a estructurar y desestructurar datos
+                  JSON.
+                </p>
+              </div>
             </div>
           </div>
         </div>

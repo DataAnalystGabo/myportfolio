@@ -2,7 +2,8 @@ const cardAboutMe        = document.getElementById('card__aboutme');
 const cardLanguages      = document.getElementById('card__languages');
 const cardTools          = document.getElementById('card__tools');
 const cardCertifications = document.getElementById('card__certifications');
-const cardProyects       = document.getElementById('card__proyects');
+const cardProyectsOne    = document.getElementById('card__proyects--one');
+const cardProyectsTwo    = document.getElementById('card__proyects--two');
 
 const showCard = (entradas)=>{
 
@@ -32,4 +33,5 @@ observe.observe(cardAboutMe);
 observe.observe(cardLanguages);
 observe.observe(cardTools);
 observe.observe(cardCertifications);
-observe.observe(cardProyects);
+observe.observe(cardProyectsOne);
+observe.observe(cardProyectsTwo);
