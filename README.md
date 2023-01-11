@@ -28,3 +28,7 @@ confirmandote la descarga del archivo pdf.
 
 ![Captura de pantalla 2023-01-11 181219](https://user-images.githubusercontent.com/96387359/211918803-3439c71e-9d61-4c73-adf6-d758dc8040a0.png)
 
+📌A medida que iba diseñando la interface de mi sitio web pensé en incorporar un efecto espectacular que simula ser un vidrio conocido
+como efecto "glass". Es increíble, por que a través de él podés ver como se difuminan los colores y formas que están por detrás. Mirá el borde de las cards!
+
+![Captura de pantalla 2023-01-11 181531](https://user-images.githubusercontent.com/96387359/211919338-a473a888-0c46-4a90-92fa-a6f6a2f4e9f1.png)
