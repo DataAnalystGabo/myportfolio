@@ -18,4 +18,6 @@ GaboDev es la fusión de Gabo (el apodo por el cual mis amigos me conocen) y Dev
 
 ![Captura de pantalla 2023-01-11 180638](https://user-images.githubusercontent.com/96387359/211917871-7f1ea461-4c2f-4b84-8414-6647236c4959.png)
 
+Mirá como el color violeta contrasta perfectamente con el negro de mi paleta. Además, podés ver flotando a nuestro amigo astronauta. Lo voy a llamar AstroDev!
 
+![Captura de pantalla 2023-01-11 180925](https://user-images.githubusercontent.com/96387359/211918342-1a255f95-7101-4561-ba36-00ae2bd3eba6.png)
