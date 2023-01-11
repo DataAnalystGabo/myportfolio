@@ -161,7 +161,7 @@ html{
     text-align: right;
     transform: var(--state-items);
     transition: .5s transform ease-in-out;
-    background-color: brown;
+    background-color: var(--black);
 }
 
 .nav__link{
@@ -469,6 +469,12 @@ html{
     width: 1.7em;
     height: 100%;
 }
+
+/**=========================== Contact ===========================*/
+
+
+
+
 
 /**=========================== Backgrounds ===========================*/
 
