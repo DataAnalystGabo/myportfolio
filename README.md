@@ -22,3 +22,9 @@ Mirá como el color violeta contrasta perfectamente con el negro de mi paleta. A
 al cual lo vamos a llamar AstroDev!
 
 ![Captura de pantalla 2023-01-11 180925](https://user-images.githubusercontent.com/96387359/211918342-1a255f95-7101-4561-ba36-00ae2bd3eba6.png)
+
+📌Es importante que mi CV siempre esté al alcance de cualquier reclutador e invite a la acción! Hacé click y mirá la animación de este boton
+confirmandote la descarga del archivo pdf.
+
+![Captura de pantalla 2023-01-11 181219](https://user-images.githubusercontent.com/96387359/211918803-3439c71e-9d61-4c73-adf6-d758dc8040a0.png)
+
