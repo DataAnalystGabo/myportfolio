@@ -324,7 +324,6 @@ html{
     grid-area: card;
     z-index: 1;
     background: var(--background-glass);
-    box-shadow: var(--shadow-glass);
     backdrop-filter: blur(7.5px);
 }
 
