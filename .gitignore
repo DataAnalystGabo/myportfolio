@@ -2,5 +2,4 @@ ais/
 vendor/
 img/
 files/
-server.php
 phpmailer.php
