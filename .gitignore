@@ -1,4 +1,5 @@
 ais/
 vendor/
+img/
 server.php
 phpmailer.php
