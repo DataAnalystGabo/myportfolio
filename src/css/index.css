@@ -10,6 +10,7 @@
     --grey                 : #B9AFBE;
     --green                : #2EBF2B;
     --green-dark           : #1f901d;
+    --red                  : #C94A4A;
     --background-glass     : linear-gradient(89.74deg, rgba(110, 97, 202, 0.1) 0.23%, rgba(194, 130, 250, 0.1) 99.79%);
     --shadow-glass         : 0px -10px 40px rgba(0, 0, 0, 0.25);
     --shadow-button        : 0px 0px 15px rgba(194, 130, 250, 0.5), 0px 0px 5px #6E61CA;
@@ -228,7 +229,7 @@ html{
     filter: drop-shadow(4px 2px 5px rgba(194, 130, 250, .5));
 }
 
-.hero__button{
+.button{
     width: max-content;
     display: flex;
     flex-direction: row;
@@ -247,25 +248,25 @@ html{
     transition-property: width;
 }
 
-.hero__label{
+.button__label{
     display: inline;
     transition-delay: 0.75s;
 }
 
-.hero__icon--down, .hero__icon--check{
+.button__icon--down, .button__icon--check{
     width: 1.5em;
     height: 100%;
 }
 
-.hero__icon--check{
+.button__icon--check{
     display: none;
 }
 
-.hero__button:hover{
+.button:hover{
     box-shadow: var(--shadow-button);
 }
 
-.hero__button:focus{
+.button:focus{
     width: 3.5em;
     height: 3.5em;
     padding: 0;
@@ -276,21 +277,21 @@ html{
     box-shadow: none;
 }
 
-.hero__button:focus .hero__label{
+.button:focus .button__label{
     display: none;
 }
 
-.hero__button:focus .hero__icon--down{
+.button:focus .button__icon--down{
     display: none;
 }
 
-.hero__button:focus .hero__icon--check{
+.button:focus .button__icon--check{
     display: block;
 }
 
 /**=========================== Aboutme ===========================*/
 
-.aboutme, .stack, .certifications, .proyects{
+.aboutme, .stack, .certifications, .proyects, .contact{
     width: 100%;
     height: max-content;
     display: flex;
@@ -471,9 +472,141 @@ html{
 
 /**=========================== Contact ===========================*/
 
+.contact{
+    grid-area: contact;
+}
 
+.contact__box{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 4em 0;
+}
 
+.contact__title{
+    font-size: 2.7rem;
+    margin-bottom: 3rem;
+}
 
+.form{
+    width: 100%;    
+    display: flex;
+    flex-direction: column;
+}
+
+.form__wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.form__label{
+    font-size: 1.2rem;
+    font-weight:800;
+    letter-spacing: 1px;
+    color: var(--grey);
+}
+
+.form__box{
+    width: 100%;
+    height: 3em;
+    position: relative;
+    display: flex;
+}
+
+.form__box--textarea{
+    height: 20em;
+}
+
+.form__input, .form__textarea{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    border-radius: 1em;
+    background: var(--background-glass);
+    padding: 1em;
+    color: var(--white);
+}
+
+.form__input--error{
+    border: 1px solid var(--red);
+}
+
+.form__textarea{
+    resize: none;
+}
+
+.form__icon{
+    width: 1.4em;
+    height: 100%;
+    position: absolute;
+    right: 5%;
+}
+
+.form__alert{
+    color: var(--red);
+    letter-spacing: 1px;
+    display: none;
+}
+
+.contact__bar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--grey);
+    margin: 3em 0;
+}
+
+.contact__line{
+    width: 40%;
+    height: 2px;
+    background-color: var(--grey);
+}
+
+.contact__socialmedias{
+    width: 100%;
+}
+
+.contact__list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 2em;
+    padding: 0;
+}
+
+.contact__link{
+    width: 11em;
+    height: 3.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--grey);
+    border: 1px solid var(--grey);
+}
+
+.contact__link:hover{
+    box-shadow: var(--shadow-button);
+}
+
+.contact__item{
+    list-style: none;
+}
+
+.contact__icon{
+    width: 1.5em;
+    height: 100%;
+    margin-right: 1em;
+}
 
 /**=========================== Backgrounds ===========================*/
 
@@ -586,5 +719,13 @@ html{
         height: 100%;
         margin-bottom: unset;
         object-fit: contain;
+    }
+
+    .contact__box{
+        width: 50%;
+    }
+
+    .contact__list{
+        flex-direction: row;
     }
 }
