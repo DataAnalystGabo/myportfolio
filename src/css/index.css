@@ -11,6 +11,7 @@
     --green                : #2EBF2B;
     --green-dark           : #1f901d;
     --red                  : #C94A4A;
+    --red-dark             : #b23b3b;
     --background-glass     : linear-gradient(89.74deg, rgba(110, 97, 202, 0.1) 0.23%, rgba(194, 130, 250, 0.1) 99.79%);
     --shadow-glass         : 0px -10px 40px rgba(0, 0, 0, 0.25);
     --shadow-button        : 0px 0px 15px rgba(194, 130, 250, 0.5), 0px 0px 5px #6E61CA;
@@ -248,17 +249,12 @@ html{
     transition-property: width;
 }
 
-.button__label{
-    display: inline;
-    transition-delay: 0.75s;
-}
-
-.button__icon--down, .button__icon--check{
+.static, .check, .xmark{
     width: 1.5em;
     height: 100%;
 }
 
-.button__icon--check{
+.check, .xmark{
     display: none;
 }
 
@@ -266,28 +262,61 @@ html{
     box-shadow: var(--shadow-button);
 }
 
-.button:focus{
+.button--send, .button--success, .button--failure{
     width: 3.5em;
     height: 3.5em;
     padding: 0;
     border-radius: 50%;
-    background-color: var(--green);
-    border: 2px solid var(--green-dark);
+    background-color: var(--fuchsia);
+    border: 2px solid var(--fuchsia-dark);
     transition: all 1s ease;
     box-shadow: none;
 }
 
-.button:focus .button__label{
-    display: none;
+.button--success{
+    background-color: var(--green);
+    border: 2px solid var(--green-dark);
 }
 
-.button:focus .button__icon--down{
-    display: none;
+.button--failure{
+    background-color: var(--red);
+    border: 2px solid var(--red-dark);
 }
 
-.button:focus .button__icon--check{
-    display: block;
+.loader{
+    width: max-content;
+    height: 1.5em;
+    display: none;
+    align-items: center;
+    flex-direction: row;
+    gap: .4em;
 }
+
+.loader__dot{
+    width: .5em;
+    height: .5em;
+    border-radius: 50%;
+    background-color: var(--white);
+    animation: loader .7s alternate infinite ease;
+}
+
+@keyframes loader{
+    from{
+        transform: scale(.2);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.loader__dot:nth-child(2){
+    animation-delay: .2s;
+}
+
+.loader__dot:nth-child(3){
+    animation-delay: .4s;
+}
+
 
 /**=========================== Aboutme ===========================*/
 

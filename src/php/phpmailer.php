@@ -16,14 +16,15 @@ function sendEmail($name, $email, $message){
     $phpmailer->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;  
 
     //Configurando los destinatarios
-    $phpmailer->setFrom('contacto@gabodev.online', 'GaboDev.online');
+    $phpmailer->setFrom($name);
     //Opcional: se puede agregar destinarios
     //como por ejemplo para enviar una copia del
     //mensaje que el usuario envió.
-    $phpmailer->addAddress($email, $name);
+    $phpmailer->addAddress('contacto@gabodev.online', 'Gonzalo Ramirez');
 
     $phpmailer->isHTML(false);
     $phpmailer->Body = $message;
+    $phpmailer->Subject = $name.' '.$email;
 
     $phpmailer->send();
 

@@ -81,13 +81,26 @@
           >
             <span class="button__label">Descargar CV</span>
             <img
-              class="button__icon button__icon--down"
+              class="button__icon static"
               src="src/img/logos/download.svg"
               alt="Icono de descarga"
             />
+            
+            <div class="button__loader loader">
+              <span class="loader__dot"></span>
+              <span class="loader__dot"></span>
+              <span class="loader__dot"></span>
+            </div>
+
             <img
-              class="button__icon button__icon--check"
+              class="button__icon check"
               src="src/img/logos/check.svg"
+              alt="Icono de descarga"
+            />
+
+            <img
+              class="button__icon xmark"
+              src="src/img/logos/xmark.svg"
               alt="Icono de descarga"
             />
           </a>
@@ -498,7 +511,7 @@
                 <input class="form__input" type="text" name="name" id="name" />
                 <img
                   class="form__icon"
-                  src="src/img/logos/xmark.svg"
+                  src="src/img/logos/xmark-circle.svg"
                   alt="icono con forma de cruz color rojo que indica error en la carga del input"
                 />
               </div>
@@ -513,7 +526,7 @@
                 <input class="form__input" type="email" name="email" id="name" />
                 <img
                   class="form__icon"
-                  src="src/img/logos/xmark.svg"
+                  src="src/img/logos/xmark-circle.svg"
                   alt="icono con forma de cruz color rojo que indica error en la carga del input"
                 />
               </div>
@@ -539,16 +552,32 @@
             </div>
           </form>
 
-          <a class="button" href="" id="button--send">
+          <a
+            class="button"
+            id="btnsend"
+          >
             <span class="button__label">Enviar mensaje</span>
             <img
-              class="button__icon button__icon--down"
+              class="button__icon static"
               src="src/img/logos/send.svg"
               alt="Icono de descarga"
             />
+            
+            <div class="button__loader loader">
+              <span class="loader__dot"></span>
+              <span class="loader__dot"></span>
+              <span class="loader__dot"></span>
+            </div>
+
             <img
-              class="button__icon button__icon--check"
+              class="button__icon check"
               src="src/img/logos/check.svg"
+              alt="Icono de descarga"
+            />
+
+            <img
+              class="button__icon xmark"
+              src="src/img/logos/xmark.svg"
               alt="Icono de descarga"
             />
           </a>

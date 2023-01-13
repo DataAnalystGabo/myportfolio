@@ -1,2 +1,3 @@
-import {} from "./animations.js";
-import {} from "./phpmailer.js";
+import {} from "./scrolling.js";
+// import {} from "./phpmailer.js";
+import {} from "./buttonAnimation.js";

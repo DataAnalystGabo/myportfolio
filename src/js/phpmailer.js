@@ -1,4 +1,5 @@
-const buttonSend = document.getElementById('button--send');
+const buttonSend = document.getElementById('btnsend');
+const loader     = document.querySelector('.loader');
 
 buttonSend.addEventListener('click', (e)=>{
 
