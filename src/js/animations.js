@@ -4,7 +4,6 @@ const cardTools          = document.getElementById('card__tools');
 const cardCertifications = document.getElementById('card__certifications');
 const cardProyectsOne    = document.getElementById('card__proyects--one');
 const cardProyectsTwo    = document.getElementById('card__proyects--two');
-const contact            = document.getElementById('contact__box');
 
 const showCard = (entradas)=>{
 
@@ -36,4 +35,3 @@ observe.observe(cardTools);
 observe.observe(cardCertifications);
 observe.observe(cardProyectsOne);
 observe.observe(cardProyectsTwo);
-observe.observe(contact);

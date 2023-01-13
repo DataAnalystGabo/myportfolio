@@ -491,7 +491,7 @@
         <div class="contact__box">
           <h3 class="contact__title">Contact</h3>
 
-          <form class="contact__form form">
+          <form class="contact__form form" id="form">
             <div class="form__wrapper">
               <label class="form__label">Nombre</label>
               <div class="form__box">
@@ -510,7 +510,7 @@
             <div class="form__wrapper">
               <label class="form__label">Email</label>
               <div class="form__box">
-                <input class="form__input" type="email" name="name" id="name" />
+                <input class="form__input" type="email" name="email" id="name" />
                 <img
                   class="form__icon"
                   src="src/img/logos/xmark.svg"
@@ -527,7 +527,7 @@
               <div class="form__box form__box--textarea">
                 <textarea
                   class="form__textarea"
-                  name="asunto"
+                  name="message"
                   id="asunto"
                   cols="30"
                   rows="10"
@@ -539,7 +539,7 @@
             </div>
           </form>
 
-          <a class="button" href="">
+          <a class="button" href="" id="button--send">
             <span class="button__label">Enviar mensaje</span>
             <img
               class="button__icon button__icon--down"
