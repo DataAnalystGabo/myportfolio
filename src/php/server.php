@@ -21,7 +21,7 @@ function validator_email($email){
 
 if(isset($_POST) && validator_empty(...$_POST)){
 
-    //Declaramos variables y las sanitizamos.
+    //Declaramos variables y las sanitizamos
     $name    = sanitizer($_POST['name']);
     $email   = sanitizer($_POST['email']);
     $message = sanitizer($_POST['message']);
@@ -34,11 +34,11 @@ if(isset($_POST) && validator_empty(...$_POST)){
 
     }else{
 
-        echo json_encode("invalid email");
+        echo json_encode("invalid-email");
     }
 
 
 }else {
 
-    echo json_encode("empty fields");
+    echo json_encode("empty-inputs");
 }

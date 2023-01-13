@@ -1,3 +1,8 @@
 import {} from "./scrolling.js";
-// import {} from "./phpmailer.js";
-import {} from "./buttonAnimation.js";
+import {} from "./phpMailer.js";
+import {Button} from "./Button.js"
+
+document.querySelector('.button--download').addEventListener('click', ()=>{
+    const button = new Button('download');
+    button.success();
+})

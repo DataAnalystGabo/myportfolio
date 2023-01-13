@@ -75,31 +75,32 @@
           </div>
 
           <a
-            class="button"
+            class="button button--download"
+            id="btndownload"
             download="cv-gonzalo-ramirez"
             href="src/files/cv-gonzalo-ramirez.pdf"
           >
             <span class="button__label">Descargar CV</span>
             <img
-              class="button__icon static"
+              class="button__icon button__icon--static"
               src="src/img/logos/download.svg"
               alt="Icono de descarga"
             />
             
-            <div class="button__loader loader">
+            <div class="button__loader button__icon--loader">
               <span class="loader__dot"></span>
               <span class="loader__dot"></span>
               <span class="loader__dot"></span>
             </div>
 
             <img
-              class="button__icon check"
+              class="button__icon button__icon--check"
               src="src/img/logos/check.svg"
               alt="Icono de descarga"
             />
 
             <img
-              class="button__icon xmark"
+              class="button__icon button__icon--xmark"
               src="src/img/logos/xmark.svg"
               alt="Icono de descarga"
             />
@@ -504,7 +505,7 @@
         <div class="contact__box">
           <h3 class="contact__title">Contact</h3>
 
-          <form class="contact__form form" id="form">
+          <form class="contact__form form" id="form" action="#">
             <div class="form__wrapper">
               <label class="form__label">Nombre</label>
               <div class="form__box">
@@ -523,27 +524,28 @@
             <div class="form__wrapper">
               <label class="form__label">Email</label>
               <div class="form__box">
-                <input class="form__input" type="email" name="email" id="name" />
+                <input class="form__input form__input--email" type="email" name="email"/>
                 <img
                   class="form__icon"
                   src="src/img/logos/xmark-circle.svg"
                   alt="icono con forma de cruz color rojo que indica error en la carga del input"
                 />
               </div>
-              <span class="form__alert"
+              <span class="form__alert form__alert--email"
                 ><strong>El campo no puede estar vacío</strong></span
               >
             </div>
 
             <div class="form__wrapper">
-              <label class="form__label">Asunto</label>
+              <label class="form__label">Mensaje</label>
               <div class="form__box form__box--textarea">
                 <textarea
-                  class="form__textarea"
+                  class="form__input"
                   name="message"
                   id="asunto"
                   cols="30"
                   rows="10"
+                  style="resize:none;"
                 ></textarea>
               </div>
               <span class="form__alert"
@@ -553,12 +555,12 @@
           </form>
 
           <a
-            class="button"
-            id="btnsend"
+            class="button button--sendemail"
+            id="btnsendemail"
           >
             <span class="button__label">Enviar mensaje</span>
             <img
-              class="button__icon static"
+              class="button__icon button__icon--static"
               src="src/img/logos/send.svg"
               alt="Icono de descarga"
             />
@@ -570,13 +572,13 @@
             </div>
 
             <img
-              class="button__icon check"
+              class="button__icon button__icon--check"
               src="src/img/logos/check.svg"
               alt="Icono de descarga"
             />
 
             <img
-              class="button__icon xmark"
+              class="button__icon button__icon--xmark"
               src="src/img/logos/xmark.svg"
               alt="Icono de descarga"
             />
