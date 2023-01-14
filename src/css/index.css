@@ -636,7 +636,7 @@ html{
 
 /**=========================== Backgrounds ===========================*/
 
-.moon{
+.moon, .pluton, .saturn, .neptuno{
     width: 100%;
     height: 100%;
     display: flex;
@@ -647,11 +647,45 @@ html{
     overflow: hidden;
 }
 
-.moon__img{
+.pluton{
+    grid-column: 1/2;
+    grid-row: 4/6;
+}
+
+.saturn, .neptuno{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    position: relative;
+}
+
+.moon__img, .pluton__img, .saturn__img, .neptuno__img{
     width: 60em;
     height: 100%;
     margin-top: 15vh;
     animation: changeMoon 4s alternate infinite;
+}
+
+.pluton__img{
+    width: 40em;
+    height: 100%;
+    margin : 0;
+}
+
+.saturn__img{
+    width: 20em;
+    height: max-content;
+    margin: 0;
+    right: 10vw;
+    position: absolute;
+}
+
+.neptuno__img{
+    width: 25em;
+    height: max-content;
+    margin: 0;
+    left: 10vw;
+    bottom: 5vh;
+    position: absolute;
 }
 
 @keyframes changeMoon{
