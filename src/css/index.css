@@ -750,6 +750,7 @@ html{
     background: var(--gradient-line);
     box-shadow: var(--box-shadow);
     filter: blur(3px);
+    opacity: .6;
     animation: stars 1000s linear infinite;
     animation-duration: calc(2000s / var(--i));
 }
