@@ -648,9 +648,9 @@ html{
 }
 
 .moon__img{
-    width: 50em;
+    width: 60em;
     height: 100%;
-    margin-top: 25vh;
+    margin-top: 15vh;
     animation: changeMoon 4s alternate infinite;
 }
 
@@ -745,6 +745,13 @@ html{
         height: 100%;
         margin-bottom: unset;
         object-fit: contain;
+    }
+
+    .moon__img{
+        width: 60em;
+        height: 100%;
+        margin-top: 25vh;
+        animation: changeMoon 4s alternate infinite;
     }
 
     .contact__box{
