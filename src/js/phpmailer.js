@@ -1,4 +1,4 @@
-import { Button } from "./button.js";
+import { Button } from "./Button.js";
 const form       = document.getElementById('form');
 const alertEmail = document.querySelector('.form__alert--email');
 
@@ -63,13 +63,11 @@ document.getElementById('btnsendemail').addEventListener('click', (e) => {
     button.loader();
 
     fetch('src/php/server.php', {
-        method: 'post',
+        method: 'POST',
         body: data
     })
     .then(response => response.json())
     .then(response => {
-
-        console.log(response);
 
         switch (response) {
             case 'success':

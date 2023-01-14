@@ -644,7 +644,6 @@ html{
     grid-column: 1/2;
     grid-row: 1/3;
     z-index: -1;
-    overflow: hidden;
 }
 
 .moon__img{

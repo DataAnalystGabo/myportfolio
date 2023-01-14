@@ -43,7 +43,7 @@ export class Button {
             this.iconXmark.style.display  = 'none';
             this.iconLoader.style.display = 'none';
             this.iconCheck.style.display  = 'none';
-        }, 2000);
+        }, 4000);
     }
 
     loader() {
