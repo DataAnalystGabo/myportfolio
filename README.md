@@ -32,7 +32,7 @@
 ![211918803-3439c71e-9d61-4c73-adf6-d758dc8040a0](https://user-images.githubusercontent.com/96387359/212753554-5598faf9-e108-4bd8-a04d-7d20e2a72926.png)
 
 ## "Cards Glass" 💎
-* A medida que iba diseñando la interface de mi sitio web pensé en incorporar un efecto espectacular que simula la textura del vidrio. Este efecto es conocido como "glass". Es increíble, por que a través de él podés ver como se difuminan los colores y las formas que están por detrás. Mirá el borde de las cards!
+* A medida que iba diseñando la interface de mi sitio web pensé en incorporar un efecto espectacular que simula la textura del vidrio. Este efecto es conocido como "glass". Es increíble, por que a través de él podés ver como se difuminan los colores y las formas. Mirá el borde de las cards!
 
 ![211920147-5ebd286a-08df-407e-b6c0-f5281b9a5332](https://user-images.githubusercontent.com/96387359/212753581-61b1fb3e-5937-40e2-a3ec-c7d21b22b59d.png)
 
@@ -41,8 +41,8 @@
 * Acerca de mí - un poco de storytelling para explicar mi motivación por la programación.
 * Stack - todas las tecnologías y herramientas que he aprendido y sigo mejorando.
 * Certificaciones - este año decidí estudiar en Platzi y es aquí donde verás mis certificaciones.
-* Proyectos - todos los proyectos en los que haya trabajado.
-* Contacto - podrás enviarme un mensaje a través del formulario de contacto ó seguirme en Github o Linkedin.
+* Proyectos - todos los proyectos en los que haya trabajado estarán en esta sección.
+* Contacto - podrás enviarme un mensaje a través del formulario de contacto ó a través de Github y Linkedin.
 
 ## Tecnologías utilizadas ⚙🛠
 
@@ -52,7 +52,7 @@
 * PHP
 
 
-## Sigueme en :
+## Sígueme en :
 
 * Github : https://github.com/gabodev-ar
 * Linkedin : https://www.linkedin.com/in/gabodev-ar/
