@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Gonzalo Ramirez (GaboDev)">
     <meta name="description" content="Portfolio de desarrollo web frontend y backend">
     <meta name="keywords" content="HTML, CSS, Javascript, SQL, MySQL, PHP, Frontend,
@@ -16,14 +16,14 @@
     <title>GaboDev | Desarrollador Web</title>
 
     <link rel="shortcut icon" href="src/img/logos/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="src/css/index.css" />
-    <link rel="stylesheet" href="src/css/normalize.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="src/css/index.css">
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
-    />
+    >
     <script type="module" src="src/js/index.js"></script>
   </head>
 
@@ -31,17 +31,15 @@
     <main class="main">
       <nav class="nav" id="nav">
         <div class="nav__wrapper">
-          <picture class="nav__picture">
-            <a href="#hero">
-              <img
+          <a href="#hero">
+            <img
               class="nav__logo"
               src="src/img//logos/gabodev-logo.svg"
-              alt=""
-            />
-            </a>
-          </picture>
+              alt="Logotipo de GaboDev"
+            >
+          </a>
 
-          <ul class="nav__items">
+          <ul class="nav__items" id="navitems">
             <li class="nav__item">
               <a class="nav__link" href="#hero">Inicio</a>
             </li>
@@ -62,16 +60,16 @@
             </li>
           </ul>
 
-          <a class="menu__hamburger" href="#nav">
+          <div class="menu__hamburger" id="menuopen">
             <span class="menu__line"></span>
             <span class="menu__line"></span>
             <span class="menu__line"></span>
-          </a>
+          </div>
 
-          <a class="menu__close" href="#">
+          <div class="menu__close" id="menuclose">
             <span class="menu__line menu__line--closeone"></span>
             <span class="menu__line menu__line--closetwo"></span>
-          </a>
+          </div>
         </div>
       </nav>
 
@@ -82,8 +80,8 @@
             <img
               class="hero__gabodev"
               src="src/img/logos/gabodev-text.svg"
-              alt=""
-            />
+              alt="Texto GaboDev en color blanco"
+            >
           </div>
 
           <a
@@ -97,7 +95,7 @@
               class="button__icon button__icon--static"
               src="src/img/logos/download.svg"
               alt="Icono de descarga"
-            />
+            >
             
             <div class="button__loader loader">
               <span class="loader__dot"></span>
@@ -108,14 +106,14 @@
             <img
               class="button__icon button__icon--check"
               src="src/img/logos/check.svg"
-              alt="Icono de descarga"
-            />
+              alt="Icono de confirmación de descarga"
+            >
 
             <img
               class="button__icon button__icon--xmark"
               src="src/img/logos/xmark.svg"
-              alt="Icono de descarga"
-            />
+              alt="Icono de error de descarga"
+            >
           </a>
         </div>
       </div>
@@ -123,7 +121,7 @@
       <div class="aboutme" id="aboutme">
         <div class="card" id="card__aboutme">
           <div class="card__glass">
-            <div class="card__box">
+            <section class="card__box">
               <h2 class="card__h2">¿Por qué programo?</h2>
 
               <p class="card__paragraph">
@@ -146,7 +144,7 @@
                 Por eso programo. Por que me da el poder de la creación y la innovación.
                 Programar nos obliga a pensar. ¡Todos deberíamos programar!
               </p>
-            </div>
+            </section>
           </div>
         </div>
       </div>
@@ -154,7 +152,7 @@
       <div class="stack" id="stack">
         <div class="card" id="card__languages">
           <div class="card__glass">
-            <div class="card__box">
+            <section class="card__box">
               <h2 class="card__h2">¿Con qué tecnologías programo?</h2>
 
               <p class="card__paragraph">
@@ -171,7 +169,8 @@
                       class="card__icon"
                       src="src/img/logos/html.svg"
                       alt="Icono de HTML5"
-                  /></a>
+                    >
+                  </a>
                 </li>
                 <li class="card__item">
                   <a
@@ -182,7 +181,8 @@
                       class="card__icon"
                       src="src/img/logos/css.svg"
                       alt="Icono de CSS3"
-                  /></a>
+                    >
+                  </a>
                 </li>
                 <li class="card__item">
                   <a
@@ -193,7 +193,8 @@
                       class="card__icon"
                       src="src/img/logos/php.svg"
                       alt="Icono de PHP"
-                  /></a>
+                    >
+                  </a>
                 </li>
                 <li class="card__item">
                   <a
@@ -204,7 +205,8 @@
                       class="card__icon"
                       src="src/img/logos/js.svg"
                       alt="Icono de JavaScript"
-                  /></a>
+                    >
+                  </a>
                 </li>
                 <li class="card__item">
                   <a
@@ -215,7 +217,8 @@
                       class="card__icon"
                       src="src/img/logos/sql.svg"
                       alt="Icono de SQL"
-                  /></a>
+                    >
+                  </a>
                 </li>
                 <li class="card__item">
                   <a
@@ -226,16 +229,17 @@
                       class="card__icon"
                       src="src/img/logos/git.svg"
                       alt="Icono de Git"
-                  /></a>
+                    >
+                  </a>
                 </li>
               </ul>
-            </div>
+            </section>
           </div>
         </div>
 
         <div class="card" id="card__tools">
           <div class="card__glass">
-            <div class="card__box">
+            <section class="card__box">
               <h2 class="card__h2">
                 ¿Con qué programas diseño mis interfaces?
               </h2>
@@ -255,7 +259,8 @@
                       class="card__icon"
                       src="src/img/logos/figma.svg"
                       alt="Icono de Figma"
-                  /></a>
+                    >
+                  </a>
                 </li>
                 <li class="card__item">
                   <a
@@ -266,7 +271,8 @@
                       class="card__icon"
                       src="src/img/logos/illustrator.svg"
                       alt="Icono de Adobe Illustrator"
-                  /></a>
+                    >
+                  </a>
                 </li>
                 <li class="card__item">
                   <a
@@ -277,10 +283,11 @@
                       class="card__icon"
                       src="src/img/logos/photoshop.svg"
                       alt="Icono de Adobe Photoshop"
-                  /></a>
+                    >
+                  </a>
                 </li>
               </ul>
-            </div>
+            </section>
           </div>
         </div>
       </div>
@@ -288,7 +295,7 @@
       <div class="certifications" id="certifications">
         <div class="card" id="card__certifications">
           <div class="card__glass">
-            <div class="card__box">
+            <section class="card__box">
               <h2 class="card__h2">Certificaciones</h2>
 
               <p class="card__paragraph">
@@ -302,7 +309,7 @@
                     class="card__icon card__icon--certifications"
                     src="src/img/logos/platzi.svg"
                     alt="Icono de Platzi"
-                  />
+                  >
 
                   <div class="card__description">
                     <strong>Platzi Curso Básico de PHP</strong>
@@ -317,7 +324,7 @@
                     class="card__icon card__icon--certifications"
                     src="src/img/logos/platzi.svg"
                     alt="Icono de Platzi"
-                  />
+                  >
 
                   <div class="card__description">
                     <strong>Platzi Curso Básico de PHP</strong>
@@ -332,7 +339,7 @@
                     class="card__icon card__icon--certifications"
                     src="src/img/logos/platzi.svg"
                     alt="Icono de Platzi"
-                  />
+                  >
 
                   <div class="card__description">
                     <strong>Platzi Curso de Integración de PHP con HTML</strong>
@@ -347,7 +354,7 @@
                     class="card__icon card__icon--certifications"
                     src="src/img/logos/platzi.svg"
                     alt="Icono de Platzi"
-                  />
+                  >
 
                   <div class="card__description">
                     <strong>Platzi Curso de PHP con Composer</strong>
@@ -363,7 +370,7 @@
                     class="card__icon card__icon--certifications"
                     src="src/img/logos/platzi.svg"
                     alt="Icono de Platzi"
-                  />
+                  >
 
                   <div class="card__description">
                     <strong>Platzi Curso Práctico de PHP</strong>
@@ -379,7 +386,7 @@
                     class="card__icon card__icon--certifications"
                     src="src/img/logos/platzi.svg"
                     alt="Icono de Platzi"
-                  />
+                  >
 
                   <div class="card__description">
                     <strong>Platzi Curso de Asincronismo con JavaScript</strong>
@@ -394,7 +401,7 @@
                     class="card__icon card__icon--certifications"
                     src="src/img/logos/argentina-programa.svg"
                     alt="Icono de Platzi"
-                  />
+                  >
 
                   <div class="card__description">
                     <strong>Argentina Programa 4.0 #SéProgramar</strong>
@@ -405,7 +412,7 @@
                   </div>
                 </li>
               </ul>
-            </div>
+            </section>
           </div>
         </div>
       </div>
@@ -422,14 +429,15 @@
                 >
                   <img
                     class="card__img"
-                    src="src/img/taekwondoitfonline.png"
+                    src="src/img/taekwondoitfonline.webp"
                     alt="Preview en blanco y negro de mi proyecto web sobre el clima actual"
-                  />
+                    loading="lazy"
+                  >
                 </a>
               </div>
 
               <div class="card__data data">
-                <div class="data__header">
+                <section class="data__header">
                   <h2 class="data__title">TAEKWONDOITF.online</h2>
 
                   <div class="data__links">
@@ -443,7 +451,7 @@
                         class="data__icon"
                         src="src/img/logos/github.svg"
                         alt="Icono de Github"
-                      />
+                      >
                     </a>
                     <a
                       class="data__link"
@@ -454,11 +462,11 @@
                       <img
                         class="data__icon"
                         src="src/img/logos/view.svg"
-                        alt="Icono de enlance"
-                      />
+                        alt="Icono de enlance al repositorio"
+                      >
                     </a>
                   </div>
-                </div>
+                </section>
 
                 <p class="card__paragraph">
                   Este es el primer proyecto web que desarrollé en el 2022.
@@ -486,14 +494,15 @@
                 >
                   <img
                     class="card__img"
-                    src="src/img/appweatheronline.png"
+                    src="src/img/appweatheronline.webp"
                     alt="Preview en blanco y negro de mi proyecto web sobre el clima actual"
-                  />
+                    loading="lazy"
+                  >
                 </a>
               </div>
 
               <div class="card__data data">
-                <div class="data__header">
+                <section class="data__header">
                   <h2 class="data__title">APPWEATHER.online</h2>
 
                   <div class="data__links">
@@ -507,7 +516,7 @@
                         class="data__icon"
                         src="src/img/logos/github.svg"
                         alt="Icono de Github"
-                      />
+                      >
                     </a>
                     <a
                       class="data__link"
@@ -518,11 +527,11 @@
                       <img
                         class="data__icon"
                         src="src/img/logos/view.svg"
-                        alt="Icono de enlance"
-                      />
+                        alt="Icono de enlance al repositorio"
+                      >
                     </a>
                   </div>
-                </div>
+                </section>
 
                 <p class="card__paragraph">
                   Este proyecto es el resultado final del curso de Asincronismo
@@ -542,18 +551,18 @@
 
       <div class="contact" id="contact">
         <div class="contact__box">
-          <h3 class="contact__title">Contact</h3>
+          <h3 class="contact__title">Contacto</h3>
 
           <form class="contact__form form" id="form" action="#">
             <div class="form__wrapper">
               <label class="form__label">Nombre</label>
               <div class="form__box">
-                <input class="form__input" type="text" name="name" id="name" />
+                <input class="form__input" type="text" name="name" id="name">
                 <img
                   class="form__icon"
                   src="src/img/logos/xmark-circle.svg"
                   alt="icono con forma de cruz color rojo que indica error en la carga del input"
-                />
+                >
               </div>
               <span class="form__alert"
                 ><strong>El campo no puede estar vacío</strong></span
@@ -563,12 +572,12 @@
             <div class="form__wrapper">
               <label class="form__label">Email</label>
               <div class="form__box">
-                <input class="form__input form__input--email" type="email" name="email"/>
+                <input class="form__input form__input--email" type="email" name="email">
                 <img
                   class="form__icon"
                   src="src/img/logos/xmark-circle.svg"
                   alt="icono con forma de cruz color rojo que indica error en la carga del input"
-                />
+                >
               </div>
               <span class="form__alert form__alert--email"
                 ><strong>El campo no puede estar vacío</strong></span
@@ -602,7 +611,7 @@
               class="button__icon button__icon--static"
               src="src/img/logos/send.svg"
               alt="Icono de descarga"
-            />
+            >
             
             <div class="button__loader loader">
               <span class="loader__dot"></span>
@@ -614,13 +623,13 @@
               class="button__icon button__icon--check"
               src="src/img/logos/check.svg"
               alt="Icono de descarga"
-            />
+            >
 
             <img
               class="button__icon button__icon--xmark"
               src="src/img/logos/xmark.svg"
               alt="Icono de descarga"
-            />
+            >
           </a>
 
           <div class="contact__bar">
@@ -632,20 +641,19 @@
           <div class="contact__socialmedias">
             <ul class="contact__list">
               
-              <a class="contact__link" href="https://github.com/gabodev-ar" target="_blank">
-                <li class="contact__item"></li>
+              <li class="contact__item">
+                <a class="contact__link" href="https://github.com/gabodev-ar" target="_blank">
                   <img class="contact__icon" src="src/img/logos/github.svg" alt="Logotipo de Github">
                   <span class="contact__span">GitHub</span>
-                </li>
-              </a>
-             
-              
-                <a class="contact__link" href="https://www.linkedin.com/in/gabodev-ar/" target="_blank">
-                  <li class="contact__item"></li>
-                    <img class="contact__icon" src="src/img/logos/linkedin.svg" alt="Logotipo de Likedin">
-                    <span class="contact__span">Linkedin</span>
-                  </li>
                 </a>
+              </li>
+             
+              <li class="contact__item">
+                <a class="contact__link" href="https://www.linkedin.com/in/gabodev-ar/" target="_blank">
+                  <img class="contact__icon" src="src/img/logos/linkedin.svg" alt="Logotipo de Likedin">
+                  <span class="contact__span">Linkedin</span>
+                </a>
+              </li>
               
             </ul>
           </div>
@@ -655,19 +663,19 @@
       </div>
 
       <div class="moon">
-        <img class="moon__img" src="src/img/moon.svg" alt="Ilustración de luna color violeta" />
+        <img class="moon__img" src="src/img/moon.svg" alt="Ilustración de luna color violeta">
       </div>
 
       <div class="pluton">
-        <img class="pluton__img" src="src/img/pluton.svg" alt="Ilustración de un planeta futurista" />
+        <img class="pluton__img" src="src/img/pluton.svg" alt="Ilustración de un planeta futurista" loading="lazy">
       </div>
 
       <div class="saturn">
-        <img class="saturn__img" src="src/img/saturn.svg" alt="Ilustración de un planeta futurista" />
+        <img class="saturn__img" src="src/img/saturn.svg" alt="Ilustración de un planeta futurista" loading="lazy">
       </div>
 
       <div class="neptuno">
-        <img class="neptuno__img" src="src/img/neptuno.svg" alt="Ilustración de un planeta futurista" />
+        <img class="neptuno__img" src="src/img/neptuno.svg" alt="Ilustración de un planeta futurista" loading="lazy">
       </div>
 
       <div class="astronaut">
@@ -675,7 +683,7 @@
           class="astronaut__img"
           src="src/img/astronaut-floating.svg"
           alt=""
-        />
+        >
       </div>
 
       <div class="stars">

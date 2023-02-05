@@ -1,5 +1,4 @@
 :root{
-
     --roboto               : 'Roboto', 'Sans-serif';
     --white                : #EBEDEE;
     --black                : #181818;
@@ -23,17 +22,12 @@
 html{
     scroll-behavior: smooth;
 }
-
 /** =========================== Body ===========================*/
-
 .body{
     width: 100%;
-    *height: 100vh;
     background-color: var(--black);
 }
-
 /**=========================== Main ===========================*/
-
 .main{
     width: 100%;
     display: grid;
@@ -47,28 +41,19 @@ html{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, max-content);
 }
-
 /**=========================== Nav ===========================*/
-
 .nav{
-    --state-open: scale(1);
-    --state-close: scale(0);
-    --state-items: translate(-100%);
-    --opacity-items: opacity(0);
-
     width: 100%;
-    margin-top: 2em;
+    padding: .5em 0;
     grid-area: hero;
     z-index: 3;
     position: fixed;
+    transition: animation .2s ease;
 }
-
-.nav:target{
-    --state-close: scale(1);
-    --state-open: scale(0);
-    --state-items: translate(0);
+.nav--active{
+    background-color: var(--black);
+    box-shadow: 0px 0px 15px rgba(194, 130, 250, 0.3), 0px 0px 5px #6E61CA;
 }
-
 .nav__wrapper{
     width: 90%;
     display: grid;
@@ -77,17 +62,13 @@ html{
     align-items: center;
     justify-content: space-between;
 }
-
 .nav__picture{
-    width: 3em;
-    height: 3em;
     z-index: 2;
     cursor: pointer;
 }
-
 .nav__logo{
-    width: 100%;
-    height: 100%;
+    width: 3em;
+    height: 3em;
     object-fit: fill;
 }
 
@@ -102,10 +83,10 @@ html{
     grid-column: 2/3;
     grid-row: 1/2;
     cursor: pointer;
-    transform: var(--state-open);
-    transition: transform .4s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+    transition: all .4s ease-in-out;
 }
-
 .menu__line{
     width: 100%;
     height: .2em;
@@ -124,34 +105,30 @@ html{
     grid-column: 2/3;
     grid-row: 1/2;
     cursor: pointer;
-    transform: var(--state-close);
-    *background-color: #B9AFBE;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .4s ease-in-out;
 }
-
 .menu__line--closeone{
     grid-row: 1/2;
     grid-column: 1/2;
 }
-
 .menu__line--closetwo{
     grid-row: 1/2;
     grid-column: 1/2;
 }
-
 .menu__line--closeone{
     transform-origin: center;
     transform: rotate(-45deg);
 }
-
 .menu__line--closetwo{
     transform-origin: center;
     transform: rotate(45deg);
 }
-
 .nav__items{
     display: grid;
+    height: calc(100vh - 4.27em);
     position: fixed;
-    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
@@ -161,11 +138,13 @@ html{
     align-content: center;
     gap: 2em;
     text-align: right;
-    transform: var(--state-items);
     transition: .5s transform ease-in-out;
     background-color: var(--black);
+    transform: translateX(-100%);
 }
-
+.nav__items--active{
+    transform: translateX(0);
+}
 .nav__link{
     text-decoration: none;
     color: var(--white);
@@ -173,13 +152,10 @@ html{
     letter-spacing: 2px;
     transition: all .2s ease-in-out;
 }
-
 .nav__link:hover{
     color: var(--grey);
 }
-
 /**=========================== Hero ===========================*/
-
 .hero{
     width: 100%;
     height: 100vh;
@@ -187,7 +163,6 @@ html{
     flex-direction: column;
     grid-area: hero;
 }
-
 .hero__wrapper{
     width: 100%;
     display: grid;
@@ -196,7 +171,6 @@ html{
     overflow: hidden;
     margin-top: 30vh;
 }
-
 .hero__title{
     width: 90%;
     max-width: 60em;
@@ -209,7 +183,6 @@ html{
     grid-column: 1/2;
     margin: 0 auto;
 }
-
 .hero__h1{
     font-size: 1.3em;
     margin-block-start: 0;
@@ -220,7 +193,6 @@ html{
     letter-spacing: 2px;
     align-self: flex-end;
 }
-
 .hero__gabodev{
     display: block;
     width: 100%;
@@ -229,7 +201,6 @@ html{
     padding-bottom: 1em;
     filter: drop-shadow(4px 2px 5px rgba(194, 130, 250, .5));
 }
-
 .button{
     width: max-content;
     display: flex;
@@ -248,20 +219,16 @@ html{
     border: 2px solid var(--fuchsia-dark);
     transition-property: width;
 }
-
 .button__icon--static, .button__icon--check, .button__icon--xmark{
     width: 1.5em;
     height: 100%;
 }
-
 .button__icon--check, .button__icon--xmark{
     display: none;
 }
-
 .button:hover{
     box-shadow: var(--shadow-button);
 }
-
 .button--send, .button--success, .button--failure{
     width: 3.5em;
     height: 3.5em;
@@ -272,17 +239,14 @@ html{
     transition: all 1s ease;
     box-shadow: none;
 }
-
 .button--success{
     background-color: var(--green);
     border: 2px solid var(--green-dark);
 }
-
 .button--failure{
     background-color: var(--red);
     border: 2px solid var(--red-dark);
 }
-
 .loader{
     width: max-content;
     height: 1.5em;
@@ -291,7 +255,6 @@ html{
     flex-direction: row;
     gap: .4em;
 }
-
 .loader__dot{
     width: .5em;
     height: .5em;
@@ -299,7 +262,6 @@ html{
     background-color: var(--white);
     animation: loader .7s alternate infinite ease;
 }
-
 @keyframes loader{
     from{
         transform: scale(.2);
@@ -308,18 +270,13 @@ html{
         transform: scale(1);
     }
 }
-
 .loader__dot:nth-child(2){
     animation-delay: .2s;
 }
-
 .loader__dot:nth-child(3){
     animation-delay: .4s;
 }
-
-
 /**=========================== Aboutme ===========================*/
-
 .aboutme, .stack, .certifications, .proyects, .contact{
     width: 100%;
     height: max-content;
@@ -328,7 +285,6 @@ html{
     align-items: center;
     grid-area: aboutme;
 }
-
 .card{
     width: 90%;
     max-width: 75em;
@@ -341,12 +297,10 @@ html{
     transition: all 1s ease-in-out;
     opacity: 0;
 }
-
 .card__show{
     transform: scale(1);
     opacity: 1;
 }
-
 .card__glass{
     width: 100%;
     height: 100%;
@@ -356,7 +310,6 @@ html{
     background: var(--background-glass);
     backdrop-filter: blur(7.5px);
 }
-
 .card__box{
     background: var(--background-box-card);
     grid-area: card;
@@ -367,26 +320,21 @@ html{
     margin: 1em;
     padding: 2em;
 }
-
 .card__h2{
     padding-bottom: 0.3em;
     font-size: 1.5rem;
 }
-
 .card__paragraph{
     line-height: 1.6em;
     margin-bottom: .3em;
     font-size: 1.1rem;
     color: var(--grey);
 }
-
 /**=========================== Stack ===========================*/
-
 .stack{
     flex-direction: column;
     grid-area: stack;
 }
-
 .card__items{
     padding: 0;
     list-style: none;
@@ -396,63 +344,51 @@ html{
     gap: 2em;
     margin-top: 1.5em;
 }
-
 .card__icon{
     width: 100%;
     height: 2.5em;
     cursor: pointer;
 }
-
 .card__icon:hover{
     *background-color: var(--grey);
 }
-
 /**=========================== certifications ===========================*/
-
 .certifications{
     grid-area: certifications;
 }
-
 .card__items--certifications{
     flex-direction: column;
 }
-
 .card__item--certifications{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-
 .card__icon--certifications{
     width: 2.22em;
     height: 100%;
     margin-right: 1em;
     cursor: unset;
 }
-
 .card__description{
     display: flex;
     flex-direction: column;
 }
-
 .card__span{
     color: var(--grey);
 }
 
 /**=========================== Proyects ===========================*/
-
 .proyects{
     grid-area: proyects;
     flex-direction: column;
 }
-
 .card__preview{
     width: 100%;
     height: 100%;
     object-fit: cover;
     overflow: hidden;
 }
-
 .card__link{
     width: 100%;
     height: 100%;
@@ -460,69 +396,56 @@ html{
     margin-bottom: 1em;
     cursor: pointer;
 }
-
 .card__img{
     width: 100%;
     height: 100%;
     filter: grayscale(100%);
     transition: filter .5s ease-in-out;
 }
-
 .card__img:hover{
     filter: grayscale(0);
 }
-
 .data__header{
     display: flex;
     flex-direction: column;
     margin-bottom: .5em;
     gap: 1em;
 }
-
 .data__title{
     width: max-content;
 }
-
 .data__links{
     display: flex;
     flex-direction: row;
-    gap: 1em;
+    gap: 2em;
 }
-
 .data__link{
     width: max-content;
     height: 100%;
 }
-
 .data__icon{
     width: 1.7em;
     height: 100%;
 }
-
 /**=========================== Contact ===========================*/
-
 .contact{
     grid-area: contact;
 }
-
 .contact__box{
     width: 90%;
     display: flex;
     flex-direction: column;
     margin: 4em 0;
 }
-
 .contact__title{
     font-size: 2.7rem;
     margin-bottom: 3rem;
 }
-
 .form{
     width: 100%;    
     display: flex;
     flex-direction: column;
 }
-
 .form__wrapper{
     width: 100%;
     display: flex;
@@ -530,25 +453,21 @@ html{
     gap: 1em;
     margin-bottom: 1em;
 }
-
 .form__label{
     font-size: 1.2rem;
     font-weight:800;
     letter-spacing: 1px;
     color: var(--grey);
 }
-
 .form__box{
     width: 100%;
     height: 3em;
     position: relative;
     display: flex;
 }
-
 .form__box--textarea{
     height: 20em;
 }
-
 .form__input{
     width: 100%;
     height: 100%;
@@ -559,11 +478,9 @@ html{
     padding: 1em;
     color: var(--white);
 }
-
 .form__input--error{
     border: 1px solid var(--red);
 }
-
 .form__icon{
     width: 1.4em;
     height: 100%;
@@ -571,13 +488,11 @@ html{
     position: absolute;
     right: 5%;
 }
-
 .form__alert{
     color: var(--red);
     letter-spacing: 1px;
     display: none;
 }
-
 .contact__bar{
     width: 100%;
     display: flex;
@@ -586,17 +501,14 @@ html{
     color: var(--grey);
     margin: 3em 0;
 }
-
 .contact__line{
     width: 40%;
     height: 2px;
     background-color: var(--grey);
 }
-
 .contact__socialmedias{
     width: 100%;
 }
-
 .contact__list{
     width: 100%;
     display: flex;
@@ -607,7 +519,6 @@ html{
     gap: 2em;
     padding: 0;
 }
-
 .contact__link{
     width: 11em;
     height: 3.5em;
@@ -619,23 +530,18 @@ html{
     color: var(--grey);
     border: 1px solid var(--grey);
 }
-
 .contact__link:hover{
     box-shadow: var(--shadow-button);
 }
-
 .contact__item{
     list-style: none;
 }
-
 .contact__icon{
     width: 1.5em;
     height: 100%;
     margin-right: 1em;
 }
-
 /**=========================== Backgrounds ===========================*/
-
 .moon, .pluton, .saturn, .neptuno{
     width: 100%;
     height: 100%;
@@ -646,31 +552,26 @@ html{
     z-index: -1;
     overflow: hidden;
 }
-
 .pluton{
     grid-column: 1/2;
     grid-row: 4/6;
 }
-
 .saturn, .neptuno{
     grid-column: 1/2;
     grid-row: 3/4;
     position: relative;
 }
-
 .moon__img, .pluton__img, .saturn__img, .neptuno__img{
     width: 60em;
     height: 100%;
     margin-top: 15vh;
     animation: changeMoon 4s alternate infinite;
 }
-
 .pluton__img{
     width: 40em;
     height: 100%;
     margin : 0;
 }
-
 .saturn__img{
     width: 20em;
     height: max-content;
@@ -678,7 +579,6 @@ html{
     right: 10vw;
     position: absolute;
 }
-
 .neptuno__img{
     width: 25em;
     height: max-content;
@@ -687,7 +587,6 @@ html{
     bottom: 5vh;
     position: absolute;
 }
-
 @keyframes changeMoon{
     to{
         filter: hue-rotate(1turn);
@@ -696,7 +595,6 @@ html{
         transform: translateY(-1em);
     }
 }
-
 .astronaut{
     width: 30%;
     max-width: 13em;
@@ -709,20 +607,16 @@ html{
     margin-top: 20%;
     animation: moveAstro 2s infinite alternate ease-in-out;
 }
-
 @keyframes moveAstro{
     to{
         transform: translateY(-1em);
     }
 }
-
 .astronaut__img{
     width: 100%;
     height: 100%;
 }
-
 /**=========================== Stars ===========================*/
-
 .stars{
     width: 100%;
     max-width: 100vw;
@@ -732,7 +626,6 @@ html{
     overflow: hidden;
     z-index: -1;
 }
-
 .stars__box{
     width: 100%;
     height: 100%;
@@ -740,7 +633,6 @@ html{
     flex-wrap: wrap;
     position: relative;
 }
-
 .stars__star{
     width: 1em;
     height: 1em;
@@ -754,7 +646,6 @@ html{
     animation: stars 1000s linear infinite;
     animation-duration: calc(2000s / var(--i));
 }
-
 @keyframes stars{
     0%{
         transform: translateY(700vh) scale(.1);
@@ -763,20 +654,14 @@ html{
         transform: translateY(0) scale(1);
     }
 }
-
 /**=========================== Medias Querys ===========================*/
 @media (min-width:950px) {
     
     .nav{
-        --state-open: scale(0);
-        --state-items: translate(0);
+        height: unset;
     }
-
-    .nav:target{
-        --state-close: scale(0);
-    }
-
     .nav__items{
+        height: unset;
         padding: 0;
         background-color: unset;
         position: unset;
@@ -788,52 +673,46 @@ html{
         letter-spacing: 0;
         gap: 2em;
     }
-
     .nav__link{
         font-size: 1em;
     }
-
+    .menu__hamburger, .menu__close{
+        display: none;
+    }
     .card__box--proyects{
         display: grid;
         grid-template-columns: 35% 65%;
         grid-template-rows: 1fr;
         gap: 1em;
     }
-
     .data__header{
         flex-direction: row;
         align-items: center;
         gap: 1em;
     }
-
     .card__preview{
         width: 100%;
         height: 100%;
         margin-bottom: unset;
     }
-
     .card__link{
         margin-bottom: unset;
     }
-
     .card__img{
         width: 100%;
         height: 100%;
         margin-bottom: unset;
         object-fit: contain;
     }
-
     .moon__img{
         width: 60em;
         height: 100%;
         margin-top: 25vh;
         animation: changeMoon 4s alternate infinite;
     }
-
     .contact__box{
         width: 50%;
     }
-
     .contact__list{
         flex-direction: row;
     }
