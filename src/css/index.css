@@ -51,7 +51,7 @@ html{
     transition: animation .2s ease;
 }
 .nav--active{
-    background-color: var(--fuchsia-dark);
+    background-color: var(--black);
     box-shadow: 0px 0px 15px rgba(194, 130, 250, 0.3), 0px 0px 5px #6E61CA;
 }
 .nav__wrapper{
